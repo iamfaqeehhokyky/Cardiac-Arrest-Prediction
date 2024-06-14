@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- <h2>Prediction Results:</h2>
+    <ul>
+        {% for result in results %}
+            <li>{{ result }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go back</a> -->
+    <h2>Prediction Results:</h2>
+    <p><i>PS: If the table is larger than your screen, adjust the screen font size by zooming out</i></p>
+    {{ results_table | safe }}
+    <br>
+    <a href="/">Go back</a>
+</body>
+</html>
